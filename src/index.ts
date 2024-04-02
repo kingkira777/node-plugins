@@ -1,6 +1,8 @@
 import ReadExcelFileCoor from "../libs/haversine";
 import MomentDateTimeFormat from "../libs/momentJS";
+import WebScrapping from "../libs/webScrapping";
 
 
 // ReadExcelFileCoor();
-MomentDateTimeFormat();
+// MomentDateTimeFormat();
+// WebScrapping("How AI works?");

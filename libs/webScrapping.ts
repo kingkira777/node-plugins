@@ -1,9 +1,7 @@
 import puppeteer from "puppeteer";
 
 let browser;
-const WebScrapping =  async () => {
-    const searchQuery = "who is Einstein?";
-
+const WebScrapping =  async (searchQuery : string) => {
     browser = await puppeteer.launch();
     const [page] = await browser.pages();
     await page.setRequestInterception(true);
@@ -28,3 +26,11 @@ const WebScrapping =  async () => {
 
 
 export default WebScrapping;
+
+
+/***
+ * USE:
+ * import WebScrapping from "../libs/webScrapping";
+ * 
+ * WebScrapping("How AI works?");
+ */
